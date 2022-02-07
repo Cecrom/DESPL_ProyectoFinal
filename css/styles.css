@@ -1,6 +1,6 @@
-#divProductos{
+#divProductos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -8,7 +8,7 @@
     height: auto;
 }
 
-.li_productos{
+.li_productos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,15 +20,40 @@
     font-size: large;
 }
 
-.tabla_productos{
+.tabla_productos {
     width: 100%;
     height: auto;
     table-layout: fixed;
     text-align: center;
 }
 
-.img_productos{
+.img_productos {
     object-fit: contain;
-    width: 45%;
+    width: 80%;
     height: auto;
+}
+
+.delete_item {
+    cursor: pointer;
+}
+
+#divDesglose {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    font-size: large;
+    color: black;
+}
+
+#totop {
+    display: none;
+    position: fixed;
+    border: 0.1rem solid black;
+    background: rgba(0, 0, 0, 0.274);
+    border-radius: 1rem;
+    right: 5%;
+    bottom: 10%;
 }
