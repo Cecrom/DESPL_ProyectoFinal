@@ -1,0 +1,34 @@
+#divProductos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.li_productos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    font-size: large;
+}
+
+.tabla_productos{
+    width: 100%;
+    height: auto;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.img_productos{
+    object-fit: contain;
+    width: 45%;
+    height: auto;
+}
