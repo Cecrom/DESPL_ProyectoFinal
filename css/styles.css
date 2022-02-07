@@ -1,3 +1,5 @@
+/* Propio */
+
 #divProductos {
     display: flex;
     flex-direction: column;
@@ -42,6 +44,10 @@
     color: black;
 }
 
+.producto_rebajado {
+    color: rgb(182, 0, 0);
+}
+
 .img_productos {
     object-fit: contain;
     width: 20%;
@@ -74,14 +80,60 @@
 }
 
 #totop {
+    cursor: pointer;
     display: none;
+    width: 5%;
     position: fixed;
     padding: 0.5rem;
-    border: 0.1rem solid black;
-    background: rgba(0, 0, 0, 0.274);
-    border-radius: 1rem;
+    content: url(../img/dado.png);
+    object-fit: contain;
     right: 5%;
     bottom: 10%;
+}
+
+
+/* Arreglando colores */
+
+i::before {
+    font-size: larger;
+    color: black;
+}
+
+ul.menu {
+    background-color: rgb(63, 63, 63);
+}
+
+ul.menu>li a {
+    color: white;
+}
+
+ul.menu>li a:hover {
+    color: rgb(155, 179, 255);
+}
+
+#main>div {
+    color: black;
+}
+
+footer {
+    background-color: rgb(63, 63, 63);
+}
+
+footer .footer_links ul li a {
+    color: white;
+}
+
+footer .footer_links ul li a:hover {
+    color: rgb(155, 179, 255);
+}
+
+footer .footer_links h4 {
+    color: white;
+}
+
+.copyright {
+    color: white;
+    background-color: rgb(63, 63, 63);
 }
 
 /* Para el móvil */
@@ -139,5 +191,8 @@
 
     #divDesglose {
         flex-direction: column;
+    }
+    #totop{
+        width: 20%;
     }
 }
