@@ -8,28 +8,38 @@
     height: auto;
 }
 
+#divProductos p {
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+
+#divProductos ul {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+}
+
 .li_productos {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 1rem;
     list-style: none;
-    width: 100%;
-    height: auto;
     font-size: large;
-}
-
-.tabla_productos {
-    width: 100%;
-    height: auto;
-    table-layout: fixed;
     text-align: center;
+    color: black;
 }
 
 .img_productos {
     object-fit: contain;
-    width: 80%;
+    width: 20%;
     height: auto;
 }
 
@@ -51,6 +61,7 @@
 #totop {
     display: none;
     position: fixed;
+    padding: 0.5rem;
     border: 0.1rem solid black;
     background: rgba(0, 0, 0, 0.274);
     border-radius: 1rem;

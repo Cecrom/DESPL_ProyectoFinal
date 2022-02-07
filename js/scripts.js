@@ -25,7 +25,7 @@ $(document).ready(function () {
     // Borrar items de la lista y actualizar precios
 
     $(".delete_item").click(function () {
-        $(this).parent().parent().parent().parent().parent().remove();
+        $(this).parent().remove();
         elements = 0;
         total = 0;
         if ($(".li_productos").length) {
@@ -40,6 +40,8 @@ $(document).ready(function () {
                 $("#precioTotal").text(conEnvio.toFixed(2));
             });
         } else {
+            $("#divProductos").empty();
+            $("#divProductos").html("<p>Su carrito de la compra está vacío. Por favor, añada manuales para echar unas partidas de rol.</p>");
             $("#shopping-cart span").text(0);
             $("#precioProductos").text(0);
             $("#precioTotal").text(0);
