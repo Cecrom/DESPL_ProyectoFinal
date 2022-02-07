@@ -43,8 +43,6 @@ $(document).ready(function () {
             $("#divProductos").empty();
             $("#divProductos").html("<p>Su carrito de la compra está vacío. Por favor, añada manuales para echar unas partidas de rol.</p>");
             $("#shopping-cart span").text(0);
-            $("#precioProductos").text(0);
-            $("#precioTotal").text(0);
         }
     });
 
